@@ -30,6 +30,8 @@ public class UserServiceImpl implements UserService{
 		Order order = new Order();
 		Movie movie = movieService.getNewMovie();
 		System.out.println("远程调用movie服务获取的结果："+movie);
+		System.out.println("远程调用movie服务获取的结果："+movie); // 复制多行
+		System.out.println("远程调用movie服务获取的结果："+movie);
 		order.setId(movie.getId());
 		order.setMovieName(movie.getMovieName());
 		order.setUserName(user.getUserName());
